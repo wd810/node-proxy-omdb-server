@@ -9,6 +9,9 @@ const app = express();
 
 app.set('trust proxy', 1);
 
+// routes
+app.use('/api', require('./routes'))
+
 // enable cors
 app.use(cors());
 
